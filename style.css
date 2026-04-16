@@ -292,19 +292,6 @@ body{
 .section-alt { background: rgba(255,255,255,0.02); }
 
 
-/* ── FEATURE ICONS ── */
-.feature-icon {
-  width: 64px; height: 64px;
-  border-radius: 16px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-.feature-icon.red    { background: rgba(227,53,13,0.15); }
-.feature-icon.yellow { background: rgba(255,215,0,0.15); }
-.feature-icon.blue   { background: rgba(26,115,232,0.15); }
-.feature-icon.green  { background: rgba(76,175,80,0.15); }
-
 /* ── SEARCH BAR from Search HTML── */
 .search-wrapper {
   background: linear-gradient(135deg, rgb(14, 7, 110), rgba(15,52,96,0.6));
