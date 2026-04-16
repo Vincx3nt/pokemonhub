@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  
+  font-family: 'Press Start 2P', monospace;
   background-color: #1a1a1a;
   color: white;
   text-align: center;
