@@ -7,7 +7,7 @@ $(document).ready(function () {
         let name = $('#search-name').val();
         let type = $('#search-type').val();
         let rarity = $('#search-rarity').val();
-
+        sessionStorage.setItem('userLastSearch',name);
         let query = "";
 
         if (name) query += `name:"${name}*" `;
@@ -97,6 +97,7 @@ $(document).ready(function () {
    //the Types of action to trigger the func
     $('#search-btn').click(function () {
         getCards(1);
+        $('#lastSearch').html(sessionStorage.getItem('userLastSearch'));
     });
 
     $('#search-type, #search-rarity').change(function () {
@@ -106,6 +107,7 @@ $(document).ready(function () {
     $('#search-name').keypress(function (e) {
         if (e.which === 13) {
             getCards(1);
+            $('#lastSearch').html(sessionStorage.getItem('userLastSearch'));
         }
     });
 
