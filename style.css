@@ -404,7 +404,7 @@ body{
 
 /*--Pokemon cards*/
 .card {
-    background: var(--card-bg);
+    background: black;
     border: none;
     transition: 0.3s;
 }
@@ -415,7 +415,7 @@ body{
 }
 
 .card-title {
-    color: var(--poke-yellow);
+    color: yellow;
     font-size: 0.95rem;
 }
 
