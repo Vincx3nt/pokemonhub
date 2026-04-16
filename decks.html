@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéTCG Hub — Deck Strategy Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="tutorial.css">
+  <link rel="stylesheet" href="decks.css">
+
+</head>
+
+
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="pokeball-icon"></div>
+        PokéTCG Hub
+      </a>
+      <div class="d-flex align-items-center gap-2 order-lg-last">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="search.html"> Card Database</a></li>
+          <li class="nav-item"><a class="nav-link" href="tutorial.html"> How to Play</a></li>
+          <li class="nav-item"><a class="nav-link" href="decks.html"> Deck Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html"> News</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html"> Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── PAGE BANNER ── -->
+  <div class="deck-banner">
+    <div class="container">
+      <h1>⚔️ Deck Strategy Gallery</h1>
+      <p class="mt-2 mb-0">Explore top-tier deck archetypes and find your winning strategy</p>
+    </div>
+  </div>
+
+  <!-- ── FILTER & FAVORITES BAR ── -->
+  <section class="section" style="padding-top:1.5rem; padding-bottom:0;">
+    <div class="container">
+      <div class="row mb-4">
+            <div class="col-12">
+                <div class="section-divider-bar">
+                    <span class="bar-accent"></span>
+                    <h2 class="bar-title">Current Meta Archetypes</h2>
+                    <span class="bar-line"></span>
+                </div>
+            </div>
+        </div>
+      <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+        <div class="d-flex flex-wrap gap-2">
+          <button class="deck-filter-btn active" data-filter="all">All Decks</button>
+          <button class="deck-filter-btn" data-filter="fire">🔥 Fire</button>
+          <button class="deck-filter-btn" data-filter="water">💧 Water</button>
+          <button class="deck-filter-btn" data-filter="grass">🌿 Grass</button>
+          <button class="deck-filter-btn" data-filter="psychic">🔮 Psychic</button>
+          <button class="deck-filter-btn" data-filter="lightning">⚡ Lightning</button>
+          <button class="deck-filter-btn" data-filter="dark">🌑 Dark</button>
+          <button class="deck-filter-btn" data-filter="favorites">⭐ Favorites</button>
+        </div>
+        <span id="fav-count" style="font-size:0.82rem;color: yellow;font-weight:700;"></span>
+      </div>
+      <div style="margin-top:0.75rem;padding-bottom:0.5rem;font-size:0.8rem;color:rgba(255,255,255,0.35);">
+        💾 Favorites are saved to your browser and persist after closing.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DECK GRID ── -->
+  <section class="section" style="padding-top:1.5rem;">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- FIRE DECK 1 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="fire">
+          <div class="deck-card fire">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/charizard.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#ff6b35;">Charizard-ex Control</div>
+                <div class="deck-tag" style="background:rgba(255,107,53,0.15);color:#ff6b35;border:1px solid rgba(255,107,53,0.3);">Fire / Control</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★★</div>
+              <p class="deck-desc">The most dominant fire deck in the current format. Utilises Charizard-ex's massive attack for late-game sweeps, supported by Arcanine-ex to recover Energy discarded by Bibarel's draw engine.</p>
+              <div class="stat-bar">
+                <div class="stat-label"><span>Aggression</span><span>90%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:90%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Consistency</span><span>85%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:85%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>60%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:60%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Charizard-ex</span>
+                <span class="deck-pokemon-chip">Arcanine-ex</span>
+                <span class="deck-pokemon-chip">Bibarel</span>
+                <span class="deck-pokemon-chip">Radiant Charizard</span>
+              </div>
+              <button class="fav-btn" data-deck="charizard-ex-control">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WATER DECK 1 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="water">
+          <div class="deck-card water">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/chien-pao.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#64b5f6;">Chien-Pao-ex / Baxcalibur</div>
+                <div class="deck-tag" style="background:rgba(33,150,243,0.15);color:#64b5f6;border:1px solid rgba(33,150,243,0.3);">Water / Combo</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★★</div>
+              <p class="deck-desc">One of the fastest decks in format. Baxcalibur's ability attaches Water Energy from the discard each turn, enabling Chien-Pao-ex to hit for massive damage on turn 2 consistently.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Speed</span><span>95%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:95%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Consistency</span><span>80%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:80%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>55%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:55%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Chien-Pao-ex</span>
+                <span class="deck-pokemon-chip">Baxcalibur</span>
+                <span class="deck-pokemon-chip">Frigibax</span>
+                <span class="deck-pokemon-chip">Irida</span>
+              </div>
+              <button class="fav-btn" data-deck="chienpao-baxcalibur">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRASS DECK 1 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="grass">
+          <div class="deck-card grass">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('	https://r2.limitlesstcg.net/pokemon/gen9/gardevoir.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#81c784;">Gardevoir-ex / Grass</div>
+                <div class="deck-tag" style="background:rgba(76,175,80,0.15);color:#81c784;border:1px solid rgba(76,175,80,0.3);">Grass / Psychic</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★☆</div>
+              <p class="deck-desc">Gardevoir-ex accelerates Psychic Energy from the hand to all your Pokémon as a free Ability. Combined with Zacian-V's draw power, it sets up explosive turns with Kirlia as a bridge.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Consistency</span><span>92%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:92%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Resilience</span><span>78%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:78%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>70%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:70%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Gardevoir-ex</span>
+                <span class="deck-pokemon-chip">Kirlia</span>
+                <span class="deck-pokemon-chip">Zacian V</span>
+                <span class="deck-pokemon-chip">Refinement Kirlia</span>
+              </div>
+              <button class="fav-btn" data-deck="gardevoir-grass">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PSYCHIC DECK -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="psychic">
+          <div class="deck-card psychic">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/mewtwo.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#e040fb;">Mewtwo-V UNION</div>
+                <div class="deck-tag" style="background:rgba(224,64,251,0.15);color:#e040fb;border:1px solid rgba(224,64,251,0.3);">Psychic / Fusion</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★☆</div>
+              <p class="deck-desc">A creative deck using four Mewtwo-V cards that combine into Mewtwo VUNION. Its shield stops all damage from Basic Pokémon, making it a nightmare for ex-heavy decks.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Uniqueness</span><span>98%</span></div><div class="stat-track"><div class="stat-fill psychic-fill" style="width:98%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Durability</span><span>88%</span></div><div class="stat-track"><div class="stat-fill psychic-fill" style="width:88%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>75%</span></div><div class="stat-track"><div class="stat-fill psychic-fill" style="width:75%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Mewtwo VUNION</span>
+                <span class="deck-pokemon-chip">Mew-ex</span>
+                <span class="deck-pokemon-chip">Scoop Up Net</span>
+              </div>
+              <button class="fav-btn" data-deck="mewtwo-vunion">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIGHTNING DECK -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="lightning">
+          <div class="deck-card lightning">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/miraidon.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#ffd700;">Miraidon-ex Turbo</div>
+                <div class="deck-tag" style="background:rgba(255,215,0,0.15);color:#ffd700;border:1px solid rgba(255,215,0,0.3);">Lightning / Turbo</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★★</div>
+              <p class="deck-desc">Miraidon-ex's Supreme Shots ability attaches two Lightning Energy from the deck to your Benched Pokémon. Combined with Electric Generator, you can power up two attackers on turn 1.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Speed</span><span>100%</span></div><div class="stat-track"><div class="stat-fill lightning-fill" style="width:100%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Consistency</span><span>85%</span></div><div class="stat-track"><div class="stat-fill lightning-fill" style="width:85%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>50%</span></div><div class="stat-track"><div class="stat-fill lightning-fill" style="width:50%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Miraidon-ex</span>
+                <span class="deck-pokemon-chip">Regieleki VMAX</span>
+                <span class="deck-pokemon-chip">Flaaffy</span>
+                <span class="deck-pokemon-chip">Raikou V</span>
+              </div>
+              <button class="fav-btn" data-deck="miraidon-turbo">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DARK DECK -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="dark">
+          <div class="deck-card dark">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/giratina.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#b39ddb;">Giratina VSTAR / Lost Zone</div>
+                <div class="deck-tag" style="background:rgba(126,87,194,0.15);color:#b39ddb;border:1px solid rgba(126,87,194,0.3);">Dark / Lost Zone</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★★</div>
+              <p class="deck-desc">Fill the Lost Zone with 10 cards to unlock Comfey's and Sableye's devastating abilities. Giratina VSTAR hits for 280 damage with VSTAR Power, taking 2-prize KOs every turn.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Power</span><span>96%</span></div><div class="stat-track"><div class="stat-fill dark-fill" style="width:96%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Complexity</span><span>85%</span></div><div class="stat-track"><div class="stat-fill dark-fill" style="width:85%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Skill Floor</span><span>85%</span></div><div class="stat-track"><div class="stat-fill dark-fill" style="width:85%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Giratina VSTAR</span>
+                <span class="deck-pokemon-chip">Comfey</span>
+                <span class="deck-pokemon-chip">Sableye</span>
+                <span class="deck-pokemon-chip">Cramorant</span>
+              </div>
+              <button class="fav-btn" data-deck="giratina-lost-zone">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIRE DECK 2 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="fire">
+          <div class="deck-card fire">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/arcanine.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#ff6b35;">Arcanine VMAX Blaze</div>
+                <div class="deck-tag" style="background:rgba(255,107,53,0.15);color:#ff6b35;border:1px solid rgba(255,107,53,0.3);">Fire / Beatdown</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★☆☆</div>
+              <p class="deck-desc">A budget-friendly fire deck built around Arcanine VMAX's Grand Blaze attack. Surprisingly resilient with 330 HP and the ability to use Hyper Potion without discarding Energy.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Budget Friendly</span><span>95%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:95%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>HP Tank</span><span>90%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:90%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Tournament Viability</span><span>45%</span></div><div class="stat-track"><div class="stat-fill fire-fill" style="width:45%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Arcanine VMAX</span>
+                <span class="deck-pokemon-chip">Inteleon</span>
+                <span class="deck-pokemon-chip">Hyper Potion</span>
+              </div>
+              <button class="fav-btn" data-deck="arcanine-vmax">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WATER DECK 2 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="water">
+          <div class="deck-card water">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/blastoise.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#64b5f6;">Blastoise VMAX Stall</div>
+                <div class="deck-tag" style="background:rgba(33,150,243,0.15);color:#64b5f6;border:1px solid rgba(33,150,243,0.3);">Water / Stall</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★★☆</div>
+              <p class="deck-desc">Blastoise VMAX's Giga Impact hits for 250, but can't attack the next turn. Use Blastoise's Bubble Shot to stall while recovering. A stall-and-hit strategy that punishes aggro decks.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Stall Power</span><span>88%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:88%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>HP Bulk</span><span>82%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:82%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Aggro Counter</span><span>85%</span></div><div class="stat-track"><div class="stat-fill water-fill" style="width:85%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Blastoise VMAX</span>
+                <span class="deck-pokemon-chip">Blastoise V</span>
+                <span class="deck-pokemon-chip">Crobat V</span>
+              </div>
+              <button class="fav-btn" data-deck="blastoise-vmax">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRASS DECK 2 -->
+        <div class="col-md-6 col-lg-4 deck-card-wrapper" data-type="grass">
+          <div class="deck-card grass">
+            <div class="deck-header">
+              <div class="deck-type-icon" style="background-image: url('https://r2.limitlesstcg.net/pokemon/gen9/venusaur.png');"></div>
+              <div>
+                <div class="deck-name" style="color:#81c784;">Venusaur-ex Bloom</div>
+                <div class="deck-tag" style="background:rgba(76,175,80,0.15);color:#81c784;border:1px solid rgba(76,175,80,0.3);">Grass / Healing</div>
+              </div>
+            </div>
+            <div class="deck-body">
+              <div class="deck-stars">★★★☆☆</div>
+              <p class="deck-desc">Venusaur-ex's Petal Dance hits for 150 and heals 30 damage between turns. Pair with Cheryl to full heal your Venusaur and repeatedly tank through opponent's attacks.</p>
+              <div class="stat-bar"><div class="stat-label"><span>Healing</span><span>92%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:92%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Longevity</span><span>88%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:88%;"></div></div></div>
+              <div class="stat-bar"><div class="stat-label"><span>Tournament Viability</span><span>55%</span></div><div class="stat-track"><div class="stat-fill grass-fill" style="width:55%;"></div></div></div>
+              <div class="deck-key-cards">
+                <span class="deck-pokemon-chip">Venusaur-ex</span>
+                <span class="deck-pokemon-chip">Cheryl</span>
+                <span class="deck-pokemon-chip">Comfey</span>
+              </div>
+              <button class="fav-btn" data-deck="venusaur-bloom">Favorite</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end row -->
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+<footer class="py-5 bg-black border-top border-danger">
+    <div class="container text-center">
+        <div class="social-links d-flex justify-content-center gap-4 mb-4">
+            <a href="https://www.facebook.com/Pokemon/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pokemon/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Pokemon?lang=en" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@pokemon" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/pokemon" class="social-icon"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <div class="mb-3">
+            <span class="text-white fw-bold fs-5">Pokémon TCG Hub</span>
+        </div>
+        
+        <ul class="list-inline mb-3">
+            <li class="list-inline-item mx-2"><a href="search.html" class="text-white-50 text-decoration-none">Search</a></li>
+            <li class="list-inline-item mx-2"><a href="tutorial.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+            <li class="list-inline-item mx-2"><a href="news.html" class="text-white-50 text-decoration-none">Latest News</a></li>
+        </ul>
+
+        <p class="text-white-50" style="font-size: 0.75rem; opacity: 0.6;">
+            © 2026 Student Project. All rights reserved. <br>
+            Pokémon and its trademarks are © Nintendo / Creatures Inc. / GAME FREAK inc.
+        </p>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="deck.js"></script>
+</body>
+</html>

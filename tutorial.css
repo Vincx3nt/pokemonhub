@@ -1,0 +1,297 @@
+/* Library Header */
+.tutorial-banner {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    color:yellow;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    background: linear-gradient(rgba(9, 8, 48, 0.7), rgba(7, 7, 116, 0.7)), url('https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 4px solid yellow;
+}
+.library-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid red;
+}
+
+/* Video Card Styling */
+.video-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+    border-color: red;
+}
+
+.video-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Thumbnail with Overlay */
+.thumbnail-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Red Play Button */
+.play-btn-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.yt-play-btn {
+    width: 70px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* The triangle inside the button */
+.yt-play-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 55%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 10px 0 10px 18px;
+    border-color: transparent transparent transparent white;
+}
+
+.video-card:hover .yt-play-btn {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+.video-card:hover .play-btn-overlay {
+    background: rgba(0,0,0,0);
+}
+
+/* Text Info */
+.video-info {
+    padding: 1.2rem;
+}
+
+.video-info h5 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.video-info p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.channel-card {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.channel-logo img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+}
+
+.channel-action .btn-danger {
+    background-color: #ff0000;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+.channel-action .btn-danger:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+}
+
+/* More Content CTA Box */
+.more-content-box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 15px; /* Match video card radius */
+    transition: all 0.3s ease;
+}
+
+.more-content-box h4 {
+    font-size: 1.1rem;
+}
+
+.more-content-box:hover {
+    border-color: #ff0000;
+    background: rgba(255, 0, 0, 0.03);
+}
+
+/* Custom Playlist Button */
+.btn-more-playlist {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-more-playlist:hover {
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+.btn-more-playlist .btn-icon {
+    transition: transform 0.3s ease;
+}
+
+.btn-more-playlist:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+.thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Roadmap Grid Styling */
+.roadmap-card {
+    background: rgba(2, 12, 78, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.roadmap-card:hover {
+    background: rgba(2, 12, 78, 0.6);
+    transform: translateY(-5px);
+}
+
+/* The "Phase" Badge */
+.step-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff0000;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+.roadmap-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.roadmap-card h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    color: #FFD700; /* Pokémon Gold */
+    margin-bottom: 15px;
+}
+
+.roadmap-card p {
+    line-height: 1.6;
+}
+
+/* Center card highlight to draw the eye */
+.highlight-border {
+    border: 1px solid rgba(255, 215, 0, 0.4) !important;
+    box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+    .roadmap-card { margin-bottom: 20px; }
+}
+
+/* Different background for the Library Section */
+#video-section-wrapper {
+    background-color: #060b28; /* Slightly darker/different tint than the body */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 50px;
+}
+
+/* The "Watch Tutorials" Bar Styling */
+.section-divider-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar-accent {
+    width: 12px;
+    height: 40px;
+    background: #ff0000; /* Red Accent */
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.bar-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.bar-line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+}
+
+/* Optional: Slight color shift for cards in this section to make them pop */
+#video-section-wrapper .video-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}

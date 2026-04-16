@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <title>Pokemon TCG - Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="pokeball-icon"></div>
+                     Search Pokemon 
+                </a>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="search.html">Card Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorial.html">How to Play</a></li>
+                    <li class="nav-item"><a class="nav-link" href="decks.html">Pokemon Decks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+  <div class="page-banner">
+        <div class="container">
+            <h1>🃏 Card Database</h1>
+            <p>Find your favorite cards and build your deck</p>
+        </div>
+    </div>
+
+    <section class="section py-5" id="search-section">
+        <div class="container">
+            <div class="search-wrapper mb-5">
+                <div class="search-input-group">
+                    <input type="text" id="search-name" placeholder="Search by name..." autocomplete="off">
+                    
+                    <select id="search-type">
+                        <option value="">All Types</option>
+                        <option value="Fire">Fire</option>
+                        <option value="Water">Water</option>
+                        <option value="Grass">Grass</option>
+                        <option value="Lightning">Lightning</option>
+                        <option value="Psychic">Psychic</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Darkness">Darkness</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Colorless">Colorless</option>
+                    </select>
+
+                    <select id="search-rarity">
+                        <option value="">All Rarities</option>
+                        <option value="Common">Common</option>
+                        <option value="Uncommon">Uncommon</option>
+                        <option value="Rare">Rare</option>
+                        <option value="Rare Holo">Rare Holo</option>
+                        <option value="Ultra Rare">Ultra Rare</option>
+                        <option value="Secret Rare">Secret Rare</option>
+                    </select>
+                    
+                    <button class="btn-poke-primary" id="search-btn">🔍 Search</button>
+                </div>
+            </div>
+
+            <div class="text-center mb-4">
+                <div id="poke-spinner" class="spinner-border text-warning" style="display:none;" role="status"></div>
+                <h5 id="result-count" class="mt-2 text-white-50"></h5>
+            </div>
+
+            <div id="card-results" class="row g-4">
+                </div>
+
+            <div id="pagination" class="text-center mt-5 mb-5">
+                </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+
+<footer class="py-5 bg-black border-top border-danger">
+    <div class="container text-center">
+        <div class="social-links d-flex justify-content-center gap-4 mb-4">
+            <a href="https://www.facebook.com/Pokemon/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pokemon/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Pokemon?lang=en" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@pokemon" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/pokemon" class="social-icon"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <div class="mb-3">
+            <span class="text-white fw-bold fs-5">Pokémon TCG Hub</span>
+        </div>
+        
+        <ul class="list-inline mb-3">
+            <li class="list-inline-item mx-2"><a href="search.html" class="text-white-50 text-decoration-none">Search</a></li>
+            <li class="list-inline-item mx-2"><a href="tutorial.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+            <li class="list-inline-item mx-2"><a href="news.html" class="text-white-50 text-decoration-none">Latest News</a></li>
+        </ul>
+
+        <p class="text-white-50" style="font-size: 0.75rem; opacity: 0.6;">
+            © 2026 Student Project. All rights reserved. <br>
+            Pokémon and its trademarks are © Nintendo / Creatures Inc. / GAME FREAK inc.
+        </p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
